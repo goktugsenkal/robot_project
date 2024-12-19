@@ -17,10 +17,8 @@ rospy.Subscriber("/turtle1/pose", Pose, callback)
 msg = Twist()
 
 while not rospy.is_shutdown():
-    msg.angular.z = random.randint(0,20)
-    msg.angular.y = random.randint(0,20)
-    msg.linear.x = random.randint(0,20)
-    msg.linear.y = random.randint(0,20)
+    msg.linear.x = random.randint(0,5)
+    msg.linear.y = random.randint(0,5)
     
     pub.publish(msg)
     rospy.sleep(0.1)
