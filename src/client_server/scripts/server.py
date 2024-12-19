@@ -7,7 +7,13 @@ def callback(req):
     response = SetBoolResponse()
     if req.data is True:
         response.success = True
-        response.message = "tabela"
+        response.message = "tabela is enabled"
+    else:
+        response.success = True
+        response.message = "tabela is disabled"
+
+    print(response)
+    return response
 
 rospy.init_node("server_node")
 
