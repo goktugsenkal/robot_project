@@ -1,0 +1,3 @@
+<launch>
+    <rosparam command="load" file="/home/goktug/catkin_test_ws/src/pub_sub/config/param_tabela.yaml" />
+</launch>

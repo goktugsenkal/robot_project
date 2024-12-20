@@ -6,3 +6,10 @@ logs/
 # Python-related files
 *.pyc
 __pycache__/
+.catkin_tools/profiles/default/devel_collisions.txt
+.catkin_tools/profiles/default/devel_collisions.txt
+build/catkin_tools_prebuild/atomic_configure/_setup_util.py
+build/catkin_tools_prebuild/catkin_generated/generate_cached_setup.py
+build/catkin_tools_prebuild/catkin_generated/setup_cached.sh
+build/catkin_tools_prebuild/CMakeFiles/CMakeError.log
+build/catkin_tools_prebuild/CMakeFiles/CMakeOutput.log
