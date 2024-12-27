@@ -1,6 +1,6 @@
-devel_space: /home/goktug/catkin_test_ws/devel
+devel_space: /home/goktug/utku_tolga_goktug_ws/devel
 install: false
-install_space: /home/goktug/catkin_test_ws/install
+install_space: /home/goktug/utku_tolga_goktug_ws/install
 profile: default
-source_space: /home/goktug/catkin_test_ws/src
-workspace: /home/goktug/catkin_test_ws
+source_space: /home/goktug/utku_tolga_goktug_ws/src
+workspace: /home/goktug/utku_tolga_goktug_ws

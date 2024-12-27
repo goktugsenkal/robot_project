@@ -1,1 +1,2 @@
-/home/goktug/catkin_test_ws/devel/./cmake.lock 111
+/home/goktug/catkin_test_ws/devel/./cmake.lock 193
+/home/goktug/utku_tolga_goktug_ws/devel/./cmake.lock 34

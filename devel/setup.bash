@@ -1,1 +1,1 @@
-/home/goktug/catkin_test_ws/devel/.private/catkin_tools_prebuild/setup.bash
+/home/goktug/utku_tolga_goktug_ws/devel/.private/catkin_tools_prebuild/setup.bash

@@ -3,28 +3,31 @@
 import rospy
 from std_srvs.srv import SetBool, SetBoolResponse
 
-tabela_state = False
+window_state = False
 
 def callback(req):
-    global tabela_state
+    global window_state
     response = SetBoolResponse()
     if req.data is True:
-        if tabela_state == False:
-            tabela_state = True
+        if window_state == False:
+            window_state = True
             response.success = True
-            response.message = "tabela is enabled"
+            response.message = "Operation is enabled"
         else:
             response.success = False
-            response.message = "tabela already enabled!!"
+            response.message = "Operation already enabled!!"
     else:
-        if tabela_state == True:
-            tabela_state = False
+        if window_state == True:
+            window_state = False
             response.success = True
-            response.message = "tabela is disabled"
+            response.message = "Operation is disabled"
         else:
             response.success = False
-            response.message = "tabela already disabled!!"
+            response.message = "operation already disabled!!"
     print(response)
+    if req.data == None:
+    	response.success = False
+    	response.message = "Invalid argument"
     return response
 
 rospy.init_node("server_node")

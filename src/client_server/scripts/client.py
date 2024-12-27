@@ -11,14 +11,18 @@ client.wait_for_service()
 
 request = SetBoolRequest()
 while not rospy.is_shutdown():
-    input_as_string = input("select value: ")
-    if input_as_string == "True" or input_as_string == "y" or input_as_string =="1":
+    input_as_string = input("Input \"enable\" for enabling, \"disable\" for disabling the window (q for quit): ")
+    if input_as_string == "q":
+    	break
+    elif input_as_string == "enable":
         input_as_bool = True
-    else:
+    elif input_as_string == "disable":
         input_as_bool = False
+    else:
+    	print("please enter a valid argument")
+    	continue
 
     request.data = input_as_bool
 
     client.call(request)
 
-rospy.spin()
